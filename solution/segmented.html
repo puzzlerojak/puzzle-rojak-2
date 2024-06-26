@@ -1,0 +1,209 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/segmented by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:28:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Segmented</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <a href="../archive.html">
+                    Archive
+                </a> 
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/segmented.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Segmented
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">INCLEMENT</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Xue Heng
+
+    </h4>
+
+    
+    <p>From the title and the clues, we might come to the realization that the crossword grid is supposed to be filled up with “letter segments” instead of letters. The letter segments used and their descriptions are as follows:<br></p>
+<p>\ backslash<br>
+/ slash<br>
+- x-axis<br>
+| y-axis<br>
+( waning crescent<br>
+) waxing crescent<br></p>
+<p>Each letter is made up of a string of letter segments, which is consistent throughout the puzzle (order of segments that make up each letter is also consistent throughout, and tries to mimic a common way each letter is written):<br></p>
+<p>A: / \ -<br>
+B: | ) )<br>
+C: (<br>
+D: | )<br>
+E: | - - -<br>
+F: unused<br>
+G: ( - |<br>
+H: | - |<br>
+I: - | -<br>
+J: unused<br>
+K: | / \<br>
+L: | -<br>
+M: | \ / |<br>
+N: | \ |<br>
+O: unused<br>
+P: | ) (same as D, but we can disambiguate easily using the clues given, if it matters)<br>
+Q: unused<br>
+R: | ) \<br>
+S: ( )<br>
+T: - |<br>
+U: unused<br>
+V: \ /<br>
+W: \ / \ /<br>
+X: / \<br>
+Y: \ / |<br>
+Z: - / -<br></p>
+<p>Solvers might come to the realization that each clue has exactly one letter segment missing. For example, 1 across has the answer NAB, and the letter segments given are 2 backslash, 1 slash, 2 waxing crescent, 3 y-axis, where we are missing 1 x-axis to make up the letter “A”. It is always the case that the missing letter segment only appears once in the word, so that its position in the grid can be unambiguously pinpointed. Missing letter segments never appear at intersections.<br></p>
+<p>Here are the answers to all the clues, with the missing segment next to it:<br></p>
+<p>Across<br>
+1. NAB -<br>
+4. SIC |<br>
+6. BAY -<br>
+8. SAD |<br>
+11. WAX -<br>
+13. SHY -<br>
+15. ACE |<br>
+17. CAB /<br>
+19. GAS |<br>
+20. SNAP -<br>
+21. IS |<br>
+22. AD -<br>
+23. EW |<br></p>
+<p>Down<br>
+1. MASS -<br>
+2. ARC |<br>
+3. HAT \<br>
+4. CAR |<br>
+5. ECLAIR (<br>
+7. AT |<br>
+9. SKIES \<br>
+10. TRY -<br>
+12. WIZ |<br>
+14. XRAY -<br>
+16. CRASS -<br>
+17. GLAD \<br>
+18. CZAR |<br></p>
+<p>Here is the grid with missing segments filled in in the yellow cells:<br><img style="height: 450px;" src="../static/puzzle_resources/segmented/sol432847109.png" alt="ups image 1"><br>
+Reading the missing segments in row-major order, we get the string:<br>
+- | - | \ | ( | - | - - - | \ / | | - - - | \ | - |<br></p>
+<p>The only sensible way to parse these letter segments is <b>INCLEMENT</b>, which is the answer to the puzzle.<br></p>
+<h2>Author's Notes</h2>
+<p>Mid hunt update: As the hunt progressed, I got increasingly surprised by how many people liked this puzzle. It didn't rank within the top half of puzzles in this hunt according to my personal ranking, and I didn't feel particularly excited or inspired when writing this either. I guess crosswords and their variants are just more popular than I thought they'd be (to be fair, I hardly do crosswords myself). I'm glad many of you enjoyed this puzzle!</p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/segmented by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:28:22 GMT -->
+</html>

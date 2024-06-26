@@ -1,0 +1,322 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/difference by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:28:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Difference in Opinion</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <a href="../archive.html">
+                    Archive
+                </a> 
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/difference.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Difference in Opinion
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">RAILROAD</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Jonathan
+
+    </h4>
+
+    
+    <p>Several of the descriptions are pretty obvious what they are, or at least the movie franchise, e.g. the Chitauri Leviathan might be a good place to start. We quickly realize that there are 2 lines referring to the same movie, one of the more obvious ones of this fact are the 2 James Bond references to Casino Royale, since playing cards and Vesper both point to the same movie. We also realize that every line has either all the Ss or all the Ws missing from the start of each words, we keep that information to use later, but note that as per the flavortext, the number of times they are missing do not matter. We identify the movies as follows, and index into the movie name by the indices provided.<br></p>
+<table>
+<thead>
+<tr>
+<th>Movie</th>
+<th>Given index</th>
+<th>Extracted Letter</th>
+<th>Actual sin/win</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Baby Driver</td>
+<td>4</td>
+<td>Y</td>
+<td>56</td>
+</tr>
+<tr>
+<td>Casino Royale</td>
+<td>6</td>
+<td>O</td>
+<td>65</td>
+</tr>
+<tr>
+<td>How to train your dragon</td>
+<td>13</td>
+<td>U</td>
+<td>23</td>
+</tr>
+<tr>
+<td>Inception</td>
+<td>6</td>
+<td>T</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Kung Fu Panda</td>
+<td>2</td>
+<td>U</td>
+<td>26</td>
+</tr>
+<tr>
+<td>Mission: Impossible</td>
+<td>15</td>
+<td>B</td>
+<td>28</td>
+</tr>
+<tr>
+<td>Ready Player One</td>
+<td>2</td>
+<td>E</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Spider-Man Homecoming</td>
+<td>14</td>
+<td>C</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Mission: Impossible</td>
+<td>2</td>
+<td>I</td>
+<td>10</td>
+</tr>
+<tr>
+<td>How to train your dragon</td>
+<td>10</td>
+<td>N</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Ready Player One</td>
+<td>2</td>
+<td>E</td>
+<td>26</td>
+</tr>
+<tr>
+<td>Spider-Man Homecoming</td>
+<td>7</td>
+<td>M</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Baby Driver</td>
+<td>2</td>
+<td>A</td>
+<td>38</td>
+</tr>
+<tr>
+<td>Inception</td>
+<td>1</td>
+<td>I</td>
+<td>17</td>
+</tr>
+<tr>
+<td>Kung Fu Panda</td>
+<td>9</td>
+<td>N</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Casino Royale</td>
+<td>3</td>
+<td>S</td>
+<td>61</td>
+</tr>
+</tbody>
+</table>
+<p>We get the cluephrase YOUTUBE CINEMA INS. Googling some will immediately point you to Cinemasins, where we find the sin number associated with the sins mentioned in the descriptions given. We find that only half of them, specifically the lines with the Ss missing, can be found. Either having already realized it, searching more, or by applying the W in the same way to the cluephrase, we can then find the other youtube channel, Cinemawins, where we find the sin number associated with the wins mentioned in the other half of the descriptions. Lastly, we can then take the sin/win difference, as hinted by the puzzle title (the first instance of sin/win is always higher than the second instance).<br> </p>
+<table>
+<thead>
+<tr>
+<th>Movie</th>
+<th>First score</th>
+<th>Second score</th>
+<th>Difference</th>
+<th>A1Z26</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mission: Impossible</td>
+<td>28</td>
+<td>10</td>
+<td>18</td>
+<td>R</td>
+</tr>
+<tr>
+<td>How to train your dragon</td>
+<td>23</td>
+<td>22</td>
+<td>1</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Ready Player One</td>
+<td>35</td>
+<td>26</td>
+<td>9</td>
+<td>I</td>
+</tr>
+<tr>
+<td>Spider-Man Homecoming</td>
+<td>14</td>
+<td>2</td>
+<td>12</td>
+<td>L</td>
+</tr>
+<tr>
+<td>Baby Driver</td>
+<td>56</td>
+<td>38</td>
+<td>18</td>
+<td>R</td>
+</tr>
+<tr>
+<td>Inception</td>
+<td>32</td>
+<td>17</td>
+<td>15</td>
+<td>O</td>
+</tr>
+<tr>
+<td>Kung Fu Panda</td>
+<td>26</td>
+<td>25</td>
+<td>1</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Casino Royale</td>
+<td>65</td>
+<td>61</td>
+<td>4</td>
+<td>D</td>
+</tr>
+</tbody>
+</table>
+<p>The first half of the descriptions are alphabetical by movie name, and so we order by the second half, giving the answer RAILROAD.<br></p>
+<h2>Author's Notes</h2>
+<p>I thought the aha of getting cinemas sins/wins was cute, but as a solver who strongly dislikes grindy puzzles I tried to make it as easy as possible to extract. The extraction ordering and method is pretty clear, hopefully teams that do solve this puzzle can do so with about half the movies. In addition, because the exact line is used in the YouTube video, searching the youtube transcript would save a lot of time from watching the videos themselves. This was another puzzle idea that I wanted to write for Puzzle Rojak 1 but couldn't because of the long puzzle answers then. I have watched many CinemaSins videos, and feel that the CinemaWins channel is kind of underrated.<br></p>
+<p>The extraction for this puzzle was inspired by <a href="https://2018.galacticpuzzlehunt.com/puzzle/split-the-reference.html" target="_blank">this</a> Galactic puzzle, which has to be one of my personal favorites.</p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/difference by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:28:23 GMT -->
+</html>

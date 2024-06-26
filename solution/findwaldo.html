@@ -1,0 +1,190 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/findwaldo by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:34:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Find Waldo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <a href="../archive.html">
+                    Archive
+                </a> 
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/findwaldo.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Find Waldo
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">GAGS</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Jonathan
+
+    </h4>
+
+    
+    <p>The flavortext hints at finding Waldo within team names, there are 4 team names that have the substring “Waldo”, each with a different puzzle solved count from 1 to 4:<br><a href="../team/Waldorks.html" target="_blank">Waldorks</a><br><a href="../team/Buchwaldoboletus.html" target="_blank">Buchwaldoboletus</a><br><a href="../team/Oswaldo.html" target="_blank">Oswaldo</a><br><a href="../team/Awa%2bL%2bDolores.html" target="_blank">Awa L Dolores</a><br></p>
+<p>(Note that Awa might be hard to find, but that’s intentional, and after finding 1, 2 and 4 teams should be able to guess that it would be a team with solve count of 3 and narrow down the search space. In practice, because we "pre-solved" some puzzles for these teams ahead of time, they also always appeared at the top of the group for their respective solve counts. In this way, teams would be expecting to search for spaces when going to search in other hunts as well)<br></p>
+<p>Looking at the team members, we find that they reference old puzzlehunts. We can go to these puzzlehunts and repeat the same thing, to find Waldo again in the team names:<br></p>
+<table>
+<thead>
+<tr>
+<th>Team Name in Puzzle Rojak 2</th>
+<th>Puzzle Solved Count</th>
+<th>Referenced Hunt</th>
+<th>Team Name</th>
+<th>Team Member</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Buchwaldoboletus</td>
+<td>4</td>
+<td>Huntinality 2023</td>
+<td><a href="https://www.huntinality.com/teams/158" target="_blank">Library Card Renewal Done</a></td>
+<td>G</td>
+</tr>
+<tr>
+<td>Awa L Dolores</td>
+<td>3</td>
+<td>Shardhunt 2023</td>
+<td><a href="https://shardhunt.com/team/Waldorf+Astoria.html" target="_blank">Waldorf Astoria</a></td>
+<td>A</td>
+</tr>
+<tr>
+<td>Waldorks</td>
+<td>2</td>
+<td>Galactic Puzzle Hunt 2023</td>
+<td><a href="https://2023.galacticpuzzlehunt.com/team/Oswald%2520of%2520Carim" target="_blank">Oswald of Carim</a></td>
+<td>G</td>
+</tr>
+<tr>
+<td>Oswaldo</td>
+<td>1</td>
+<td>Brown Puzzlehunt 2024</td>
+<td><a href="https://www.brownpuzzlehunt.com/team/349" target="_blank">Withdrawal Doubts</a></td>
+<td>S</td>
+</tr>
+</tbody>
+</table>
+<p>Looking at the team members again, each hunt has a single member on the Waldo teams, each being a single letter. Ordering by solve count of the original teams, we get the answer <b>GAGS</b>. Yes, Waldo was just laughing at everyone from afar :) <br> </p>
+<h2>Author's Notes</h2>
+<p>I like the idea of riffing off finding Waldo, we did it in the prepuzzle in Puzzle Rojak 1, and there were tons of comments saying they expected to actually find Waldo on the site somewhere, and I decided to make it a puzzle for Puzzle Rojak 2. The idea of using our team name on hunt sites was to be used in Puzzle Rojak 1, in fact, I even hid the first part of it preemptively in <a href="https://2020.galacticpuzzlehunt.com/team/whereswaldo.html" target="_blank">Galactic’s hunt</a> 1 year early. For anyone that wants to try, the idea then was going to be Printer’s Devilry using anagrammed of hunt name + 1 extra letter, with the extra letter used for extraction. It was quite ridiculous, and hunt names just aren't great for Printer's Devilry (just look at QoDE lol), so unsurprisingly it fell through.<br></p>
+<p>Somehow we forgot to start early enough, and we actually almost ran out of hunts to seed information in. Thankfully the team from 17th Shard became our testsolvers so we could alter our team name after the fact. We were expecting multiple hunts in the first half of this year (e.g. Microsoft Puzzlehunt and Grand Hunt Digital). I was also very anxiously waiting for Brown Puzzlehunt to close team registrations (in case somehow another team with substring WALDO showed up), and I had to wait 2 extra weeks before that happened. We had a backup in place <a href="https://jh2024.jianghujiemi.fun/teams" target="_blank">here</a>, and we were also prepared to use CMU Spring hunt as well (by appending (S) to our team name) but thankfully we did not need either, as we did not finish either hunt and appeared very far down the leaderboard woops. We very nearly did not finish Brown Puzzlehunt either, our team has been shrinking and 4 members for a hunt with up to 12 members was rough.<br></p>
+<p>I thought I'll also take this question:<br><a href="../static/puzzle_resources/waldo/1.png"><img style="height: 50px;" src="../static/puzzle_resources/waldo/1.png" alt="waldo1"></a><br></p>
+<p>and answer it with this:<br><a href="../static/puzzle_resources/waldo/2.png"><img style="height: 300px;" src="../static/puzzle_resources/waldo/2.png" alt="waldo2"></a></p>
+<p>We had a quick check for Waldo substrings in team names, and also set up a "Waldo got triggered" notification in Discord. We counted 4 teams trying to create a team with Waldo in their name, with the first triggered just 1 minute after the hunt started, and the relevant team from the email above triggered it back to back 6 times in quick succession. We admire your tenacity!</p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/findwaldo by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:34:48 GMT -->
+</html>

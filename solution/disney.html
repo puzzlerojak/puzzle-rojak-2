@@ -1,0 +1,201 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/disney by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:32:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Disney</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <a href="../archive.html">
+                    Archive
+                </a> 
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/disney.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Disney
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">LEWIS</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Jonathan
+
+    </h4>
+
+    
+    <p>This together puzzle makes it very explicit that we are interested in 2 other puzzles, and directly gives solvers the gimmick of this round: teams need to use 2 other puzzles in this hunt to solve together round puzzles. Both components of this puzzle use the same 5 movies and their characters: Cinderella, Beauty and the Beast, Aladdin, The Little Mermaid and Pocahantas.<br></p>
+<p>The Einstein puzzle can be resolved, with the names being the voices of the Disney princess/queen in the movie, the age being the canonical age of the princess character they play, the animal being their sidekick, and the initial being the first letter of the princess, as follows, to give the phrase ID OTHER CHARS THEN IDX B 1 C12 P 3 J 1 A 6.<br><img style="height: 400px;" src="../static/puzzle_resources/disney/sol45826.png" alt="disney1"><br></p>
+<p>The initials are the same ones used in the Zebra puzzle, and we can parse this as both an ordering and an index.<br>
+The books minipuzzles’ answers each represent a character from these 5 movies:<br>
+Perjured Parrot: Iago from Aladdin, the parrot of the villain, Iago is known to spout all kinds of nonsense<br>
+Spurious Spinster: Vanessa from The Little Mermaid (Ursula’s alter ego), who pretended to be a fake unmarried woman to make Eric forget Ariel<br>
+Crooked Candle: Lumiere from Beauty and the Beast, yes technically a candelabra, yes technically not crooked, but Lumiere’s arms are normally bent when dancing. <br>
+Angry Mourner: Powhatan from Pocahantas, who was very angry at Kocoum’s death<br>
+Dangerous Dowager: Lady Tremaine from Cinderella, who was basically an evil stepmother<br></p>
+<table>
+<thead>
+<tr>
+<th>Given order (from re-solved Einstein)</th>
+<th>Given index (from re-solved Einstein)</th>
+<th>Actual Disney Princess</th>
+<th>New Character</th>
+<th>Indexed letter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B</td>
+<td>1</td>
+<td>Belle</td>
+<td>Lumiere</td>
+<td>L</td>
+</tr>
+<tr>
+<td>C</td>
+<td>12</td>
+<td>Cinderella</td>
+<td>Lady Tremaine</td>
+<td>E</td>
+</tr>
+<tr>
+<td>P</td>
+<td>3</td>
+<td>Pocahantas</td>
+<td>Powhatan</td>
+<td>W</td>
+</tr>
+<tr>
+<td>J</td>
+<td>1</td>
+<td>Jasmine</td>
+<td>Iago</td>
+<td>I</td>
+</tr>
+<tr>
+<td>A</td>
+<td>6</td>
+<td>Ariel</td>
+<td>Vanessa</td>
+<td>S</td>
+</tr>
+</tbody>
+</table>
+<p>Lastly, we can then index the numbers into the characters, this gives us the final answer LEWIS.<br></p>
+<h2>Author's Notes</h2>
+<p>If teams still have not understood the together round mechanic by this point, they will have 3 puzzles sitting completely unsolvable, which would not be ideal given the unlock width, and as such we explicitly tell teams that these puzzles are related.<br></p>
+<p>This set went through so many iterations, at one point selective sounds detection was also a part of this Together puzzle. There were many many rejected Perry Mason associations, including Velvet Claws (for Ursula, but could have applied to Sebastian), Ice-Cold Hands (for Elsa, but could have applied at one point in the movie to Anna), Fenced In Woman (for Rapunzel, but not really a fence), Restless Redhead/Queenly Contestant (for Merida, but rejected as there were multiple redheads and then rejected for not wanting to use the princesses themselves), Daring Decoy (for Vanessa, but she wasn't really a decoy). By extension, this meant many many rewrites of Yin Yang puzzles and Many Blanks indices.<br></p>
+<p>This Communiter set stemmed from a bit of personal frustration when some puzzles do not use all the information provided. (Sorry, the zebra puzzle is a bad example too!) I was discussing with someone about certain puzzle types where teams would not give it too much thought when certain information went unused, and Einstein puzzles came up. Ideally teams miss the Disney aha on the first pass and groan at it later. I hope I made the Zebra puzzle straightforward enough that most teams would not give it a second thought :) If your team was really observant and noticed the hidden message in Zebra puzzle early, hopefully that would have given your team a huge leg up in terms of understanding the Communiter round mechanic.</p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/disney by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:32:59 GMT -->
+</html>

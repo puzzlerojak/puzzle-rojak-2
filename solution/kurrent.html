@@ -1,0 +1,284 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/kurrent by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:32:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Measuring Kurrent</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <a href="../archive.html">
+                    Archive
+                </a> 
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/kurrent.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Measuring Kurrent
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">CIRCUIT DESIGN</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+maxwheel
+
+    </h4>
+
+    
+    <p>We can calculate the current flowing through each Circuit using the equation V/R = I. Converting the numbers received to letters using A=1,..Z = 26, we see the intermediate message “GROUP IS A RETRO CUP.” The Retro Cup appears across the 4 clued Mario Kart games (DS, Wii, 7, and 8) and includes 4 “sub-cups” (Shell, Banana, Leaf and Lightning). Each sub-cup contains 4 race tracks that appeared in a previous Mario Kart game.<br></p>
+<p>Each of the top 16 circuits represent a specific sub-cup with each of the 4 resistors representing its 4 tracks in the order they appear in the sub-cup (clockwise around the circuit). For example, the top-left circuit represents the Shell Cup for Mario Kart DS with the tracks Mario Circuit 1, Moo Moo Farm, Peach Circuit, and Luigi Circuit.<br></p>
+<p>Solvers should realize the 3 bands on each resistor represent 3 facts about its respective track’s original debut appearance:<br>
+1.  Its Mario Kart game<br>
+2.  Its original cup<br>
+3.  Its original track number (i.e., was it the first track of its cup, second track, etc.)<br></p>
+<p>Once solvers realize this, they can create the table for encoding Mario Kart tracks.<br></p>
+<table>
+<thead>
+<tr>
+<th>Color</th>
+<th>Game (1st resistor band)</th>
+<th>Cup (2nd resistor band)</th>
+<th>Track Number (3rd resistor band)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Brown</td>
+<td>Super Mario Kart</td>
+<td>Mushroom</td>
+<td>One</td>
+</tr>
+<tr>
+<td>Red</td>
+<td>Mario Kart 64</td>
+<td>Flower</td>
+<td>Two</td>
+</tr>
+<tr>
+<td>Orange</td>
+<td>Mario Kart: Super Circuit</td>
+<td>Lightning</td>
+<td>Three</td>
+</tr>
+<tr>
+<td>Yellow</td>
+<td>Mario Kart: Double Dash!!</td>
+<td>Star</td>
+<td>Four</td>
+</tr>
+<tr>
+<td>Green</td>
+<td>Mario Kart:DS</td>
+<td>Special</td>
+<td>Five</td>
+</tr>
+<tr>
+<td>Blue</td>
+<td>Mario Kart Wii</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Violet</td>
+<td>Mario Kart Seven</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Gray</td>
+<td>Mario Kart Eight</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Finally, solvers should calculate the currents of the bottom 13 circuits and use the above table to translate the bottom 13 resistors into Mario Kart tracks. <br></p>
+<table>
+<thead>
+<tr>
+<th>Track name</th>
+<th>Current</th>
+<th>Indexed letter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Choco Island 1</td>
+<td>1</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Wario Colosseum</td>
+<td>4</td>
+<td>I</td>
+</tr>
+<tr>
+<td>Royal Raceway</td>
+<td>1</td>
+<td>R</td>
+</tr>
+<tr>
+<td>Cheese Land</td>
+<td>1</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Maka Wuhu</td>
+<td>6</td>
+<td>U</td>
+</tr>
+<tr>
+<td>Figure 8 Circuit</td>
+<td>2</td>
+<td>I</td>
+</tr>
+<tr>
+<td>Sweet Sweet Canyon</td>
+<td>5</td>
+<td>T</td>
+</tr>
+<tr>
+<td>DK Summit</td>
+<td>1</td>
+<td>D</td>
+</tr>
+<tr>
+<td>Boo Lake</td>
+<td>7</td>
+<td>E</td>
+</tr>
+<tr>
+<td>Shy Guy Falls</td>
+<td>1</td>
+<td>S</td>
+</tr>
+<tr>
+<td>Mario Circuit</td>
+<td>4</td>
+<td>I</td>
+</tr>
+<tr>
+<td>Ghost Valley 1</td>
+<td>1</td>
+<td>G</td>
+</tr>
+<tr>
+<td>Rainbow Road</td>
+<td>4</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+<p>We can then use the currents to index into their names to get the final answer: CIRCUIT DESIGN.</p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/kurrent by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:32:25 GMT -->
+</html>

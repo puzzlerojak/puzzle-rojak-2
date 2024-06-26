@@ -1,0 +1,170 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/knavesandknights by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:34:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Knaves and Knights</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <a href="../archive.html">
+                    Archive
+                </a> 
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/knavesandknights.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Knaves and Knights
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">CLASH</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Xue Heng
+
+    </h4>
+
+    
+    <p>The first thing to do is to identify who the knaves (liars) and knights (truth-tellers) are. A sample solve path is as follows:</p>
+<p>Set 1:<br>
+B, C, D have to all be knights (if one of them is a knight, then all of them have to be knights; if one of them is a knave, then the other person they are referring to has to be a knight, then they all still have to be knights, so it is not possible for any of them to be knaves). Thus E is a knave and hence A is also a knave.<br>
+
+Set 2:<br>
+At most one of these statements can be true. If they are all false, then A will be a knight (contradiction), so exactly one of them has to be true. So E is a knight, and everyone else are knaves.<br>
+
+Set 3:<br>
+Suppose A is a knight. Then C is a knight. By A’s statement, B, D, E are all knaves, a contradiction, since if A and C are the only knights, E is telling the truth. So A is a knave. Suppose B is a knave. Then there are at least three knaves, which means that there are at most two knights, and that A is telling the truth, a contradiction. So B is a knight. B being a knight directly implies that E is a knight. Suppose that C is a knave. Then he is telling the truth, since both A and C are knaves so there can be at most three knights. This is a contradiction, so C is a knight. Then D has to be a knave.<br>
+
+Set 4:<br>
+A and C directly contradict each other, so B must be a knave. D and E directly contradict each other, so one has to be a knight (E) and the other a knave (D). Since A and C comprise one knave and one knight, and given the identities of the other three, A is a knave and C is a knight.<br>
+
+Set 5:<br>
+A and C contradict each other, so one must be a knave and the other a knight. A can’t be a knight, or else D’s claim that both A and C are knaves are correct, so A is the knave and C is the knight. Then E is a knave and B is a knight.<br>
+
+Set 6:<br>
+D is obviously lying, because a knight will never call himself a knave. So D is a knave, and to make D’s statement false, E has to be a knight. Then C is a knight, and A and B are knaves.<br>
+
+Set 7:<br>
+If B is a knave, B is lying, so everyone is a knave and must all be lying. But this means that A is telling the truth, a contradiction, so B has to be a knight. We next examine C’s statement. If C is a knave, then C is lying, so B, C, D, E are all knaves, given that A is already a knight. Again, this means that E is telling the truth, a contradiction, so C has to be a knight. We next examine D’s statement. If D is a knave, then D is lying, so A, D, E are all knaves, given that B, C are already knights.  Once again, Again, this means that E is telling the truth, a contradiction, so D has to be a knight. Once we know that B, C, D are knights, it follows that A, E have to be knaves.<br></p>
+<p>We next notice that the people are suspiciously grouped into groups of five, which strongly suggests binary. This is confirmed by the flavor text, which hints at 0 and 1. Taking a knave to represent 0 and a knight to represent 1 (in logic, 0 usually represents false and 1 represents true), we have seven binary strings in order: 01110, 00001, 01101, 00101, 01100, 00101, 01110. Converting these strings to letters, we get the cluephrase NAME LEN.<br></p>
+<p>Looking at the lengths of the people’s names, those with an odd length are knights and those with an even length are knaves, which is consistent with odd being 1 (mod 2) and even being 0 (mod 2). Now, we have a way of telling a person’s identity from their name.<br></p>
+<p>Turning to the 15 statements at the end, we can identify the identities of the people and use the information they provide to deduce the final answer. Namely, Bryan, Linus, Madison, Melissa, Nicky, Patrick, Timothy and Zoe are telling the truth; and everyone else is lying. Summarizing the statements given by everyone, we have the following information:<br>
+The answer is exactly five letters long, with all five letters being distinct<br>
+The answer has exactly one vowel, which is not I or U or E (so it has to be A or O)<br>
+The answer has to have at least one H, at least one S, at least one L, and at least one of C, P, V, Y<br>
+The answer has both a 3-letter and 4-letter substring which are english words<br></p>
+<p>Using any online word search tool you like (or you could just think of the answer yourself!), you will be able to get the answer CLASH. A sample nutrimatic query would be “&lt; hsl[ao][cpvy] &gt;”, which gives CLASH as the top result. We note other results from the nutrimatic query do not contain both a 3-letter and a 4-letter substring which is an english word, so the answer is <b>CLASH</b>, which does indeed contain LASH and ASH as substrings.<br></p>
+<h2>Author's Notes</h2>
+<p>I wanted to write a simple logic puzzle for round 1 which is accessible to newer solvers. It includes a common encoding method used in puzzle hunts (binary), as well as a final section that might be much easier if an online word finding/filtering tool was used, encouraging newer solvers to use such internet tools freely and to their advantage. Even if you are an experienced solver who breezed through the puzzle, I hope that you found it fun.</p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/knavesandknights by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:34:18 GMT -->
+</html>

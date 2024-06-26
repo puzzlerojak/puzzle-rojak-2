@@ -1,0 +1,206 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/slide by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:29:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Slide Away</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <a href="../archive.html">
+                    Archive
+                </a> 
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/slide.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Slide Away
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">SCIENTIFIC</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Xue Heng
+
+    </h4>
+
+    
+    <p>We should start off by solving the clues, which should have several easier entry points. Despite having no enumeration, we realize that they are all eight letter words, and the words in one column are anagrams of the words in the other column. For further confirmation, we could also notice that the words in the right column are sorted alphabetically, which means that ordering should be based on the words in the left column. The words and their anagrams are given as follows (in order of the left column):<br></p>
+<p>TERRAINS    STRAINER<br>
+THICKETS    THICKSET<br>
+RECORDER    RERECORD<br>
+GARDENER    GARNERED<br>
+PRESENTS    SERPENTS<br>
+RELATION    ORIENTAL<br>
+MARCHING    CHARMING<br>
+MUTILATE    ULTIMATE<br>
+TEACHING    CHEATING<br>
+TERRACES    RETRACES<br></p>
+<p>Next, given the title and the 3x3 grid with one black square next to each clue, as well as the accompanying note at the bottom of the puzzle, we can intuit that we are supposed to fill in the letters into the grid, except in the black square, and each grid functions like a “slide puzzle”, where we have to slide pieces around to transform the word in the left column into its anagram in the right column.<br></p>
+<p>Reading the first letter of each of the clues in the left column, we get the clue phrase LEAST MOVES, which hints to us that we need to find the minimum number of moves required to get from the grid in the left column to the grid in the right column, for each of the ten pairs of anagrams. To be clear, a move is the shifting of one tile into the empty space in the grid. We can do this manually (might be difficult for a few of the grids, but most of them require less than ten moves), or write a program to compute it. The minimum number of moves for each pair is given below:<br></p>
+<table>
+<thead>
+<tr>
+<th>Pair of words</th>
+<th>Minimum number of moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TERRAINS-&gt;STRAINER</td>
+<td>19</td>
+</tr>
+<tr>
+<td>THICKETS-&gt;THICKSET</td>
+<td>3</td>
+</tr>
+<tr>
+<td>RECORDER-&gt;RERECORD</td>
+<td>9</td>
+</tr>
+<tr>
+<td>GARDENER-&gt;GARNERED</td>
+<td>5</td>
+</tr>
+<tr>
+<td>PRESENTS-&gt;SERPENTS</td>
+<td>14</td>
+</tr>
+<tr>
+<td>RELATION-&gt;ORIENTAL</td>
+<td>20</td>
+</tr>
+<tr>
+<td>MARCHING-&gt;CHARMING</td>
+<td>9</td>
+</tr>
+<tr>
+<td>MUTILATE-&gt;ULTIMATE</td>
+<td>6</td>
+</tr>
+<tr>
+<td>TEACHING-&gt;CHEATING</td>
+<td>9</td>
+</tr>
+<tr>
+<td>TERRACES-&gt;RETRACES</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>Converting the minimum number of moves to letters using A-Z 1-26, we get the answer to the puzzle, SCIENTIFIC.<br></p>
+<h2>Author's Notes</h2>
+<p>My unreserved thanks goes to Linus Lee, who helped to write the function that takes in a starting grid and an ending grid and spits out the minimum number of moves needed to get from any start state to any end state. My knowledge of coding is nearly zilch, so without his invaluable assistance this puzzle would not have existed.<br></p>
+<p>Ideally, for elegance, I would have liked to keep the position of the black square in the start and end grids the same for each pair of words, or even better, always have the black square at the bottom right corner, which is the way it is in a traditional slide puzzle. Unfortunately, this was not possible especially when I needed small numbers of moves, so I had to settle for this version.<br></p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/slide by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:29:09 GMT -->
+</html>

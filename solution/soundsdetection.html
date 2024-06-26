@@ -1,0 +1,192 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/soundsdetection by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:34:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Selective Sounds Detection</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <a href="../archive.html">
+                    Archive
+                </a> 
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/soundsdetection.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Selective Sounds Detection
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">DANCE</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Xue Heng
+
+    </h4>
+
+    
+    <p>We start by identifying each of these famous pieces of music/songs (the enumeration might be helpful here) and, as the prompt suggests, the notes (CDEFGAB) which are present in each excerpt (note that the pieces may be transposed from the original, and there are no black keys involved):<br></p>
+<p>Canon in D - ABCDEFG<br>
+Oh! Susanna - ACDEFG<br>
+Eine Kleine Nachtmusik - ABCDG<br>
+Deck the Halls - ABCDG<br>
+Edelweiss - ACDEFG<br></p>
+<p>As suggested from the acronym of the title (SSD) and the flavortext having the words “seven”, “segment” and "display", we can make the intuitive leap that <a href="https://www.electronics-tutorials.ws/blog/7-segment-display-tutorial.html" target="_blank">seven segment displays</a> are important here. Indeed, if we translate the notes present in each of the musical excerpts into seven segment display (with a present note signifying “on” state and an absent note signifying “off” state), we get numbers:<br></p>
+<table>
+<thead>
+<tr>
+<th>Title of song</th>
+<th>Notes</th>
+<th>SSD drawn number</th>
+<th>Indexed Letter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Canon in D</td>
+<td>ABCDEFG</td>
+<td>8</td>
+<td>D</td>
+</tr>
+<tr>
+<td>Oh! Susanna</td>
+<td>ACDEFG</td>
+<td>6</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Eine Kleine Nachtmusik</td>
+<td>ABCDG</td>
+<td>3</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Deck the Halls</td>
+<td>ABCDG</td>
+<td>3</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Edelweiss</td>
+<td>ACDEFG</td>
+<td>6</td>
+<td>E</td>
+</tr>
+</tbody>
+</table>
+<p>The answer is <b>DANCE</b>.<br></p>
+<h2>Author's Notes</h2>
+<p>I originally envisioned a mechanism where each time a note is played that particular segment toggles from “off” to “on” or vice versa, but this seemed a little tedious. Moreover, it was (surprisingly) extremely difficult to find famous pieces of music which satisfy this criteria, so I settled for this version of the puzzle.</p>
+<p>Jon: In the latest season of Taskmaster, <a href="https://youtube.com/shorts/utHJ3Wi3pZU?si=4Yo4lru_O-T6nDcB" target="_blank">Eine Kleine Nachtmusik</a> was actually featured just before the hunt started!</p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/soundsdetection by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:34:39 GMT -->
+</html>

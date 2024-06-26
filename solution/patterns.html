@@ -1,0 +1,150 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/patterns by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:32:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: I Know My Patterns!</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <a href="../archive.html">
+                    Archive
+                </a> 
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/patterns.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: I Know My Patterns!
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">MARIO</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Jonathan
+
+    </h4>
+
+    
+    <p>This puzzle presents 3x3 squares of black and white cells. The puzzle title is reminiscent of the other puzzle titles “I know my ABCs!” and “I know my 123s!”. The severe lack of information in this puzzle to be remotely useful, the overall meta title being together, and perhaps the fact that some solvers might have found the grid in ABCs to be underutilized, should all clue solvers towards relooking these other 2 puzzles. Indeed, these black and white squares appear in 123s in the drop quotes, and notably there are 8 grids there as well, and we can <a href="https://docs.google.com/spreadsheets/d/1qrJfWl2FAP8cULw7UV8SWDaD396BeMCAQqFy29vfRBY/edit?usp=sharing" target="_blank">match the grids up</a>, thanks to the Cardinality team for a very detailed spreadsheet during testsolving!. </p>
+<p>The next step is to find them in the giant grid in the ABCs puzzle, and we find that they appear suspiciously in the grid, as follows (Note that no rotations are necessary to match them up, but even without this assumption, given that there are only 7 of each letter in the grid, 4 letters is enough to identify each 3x3 square, even without that, the resulting pattern of their positions should be enough to confirm things):<br><img style="height: 400px;" src="../static/puzzle_resources/patterns/sol2357864.png" alt="patterns1"><br></p>
+<p>The letters in the black squares seem to be a limited set, including the rather strange use of Ws and Ys, which should nudge us towards figuring out what letters are used, and we find that 9 total letters are used, RSTUVWXYZ. That, along with the suspicious positions the squares were found, and the 3x3 nature of the squares, should suggest treating the black squares as clues to a letter Sudoku. (Note that the letters in the white squares, while some appear in the same set of letters, clearly cannot be valid givens, because some of them are clearly duplicates within each 3x3)<br></p>
+<p>In the following grid, we convert all Rs to 1s all the way to Zs as 9s, to make the next step more clear, though either way is fine. The sudoku itself does not require any advanced techniques, beyond noticing certain hidden singles, and there are many ways to the solution.<br><img style="height: 400px;" src="../static/puzzle_resources/patterns/sol43252498.png" alt="patterns2"><br></p>
+<p>Given that we use consecutive letters of the alphabet, it would make sense to assume they represent an ordering. The only unused letters given are those in the middle grid, and we can rearrange them as given, to get the cluephrase IT’S A ME WHO, and a quick google search will show that this is a catchphrase of the character MARIO.<br></p>
+<h2>Author's Notes</h2>
+<p>Well, this was the Together round prototype that started it all. We tested this trio internally to great success, and we were confident that the Together round set could work.<br></p>
+<p>I think there is something really cool as a solver to open a puzzle and go: “That’s all I get?!” and I hope this puzzle, for a brief moment, had that effect. I really enjoyed the minimalist presentation of this puzzle, and hopefully some solvers out there enjoyed the experience. It was also nice that even with just 9 letters the final cluephrase was not easy to nutrimatic. At least 3 testsolving groups tried, and all 3 failed. I’ll love to hear if anyone skipped the Sudoku and nutrimaticed out the answer without doing it, but I don’t think the Sudoku was too difficult regardless.<br></p>
+<p>I did not want to give the matching directly in the puzzle titles, unfortunately, Slide Away’s presentation was liable to be a giant red herring, and for teams that leave this unlocked till later, we decided it would be safer to just avoid any issues even though we intentionally unlocked Slide Away a couple of puzzles after this one.<br></p>
+<p>It's pretty unfortunate that the cluephrase had to be confirmed in this puzzle, but we anticipate that certain teams might get stuck parsing the cluephrase as IT SAME WHO and be confused for way too long.<br></p>
+<p>Multiple testsolves happened before someone pointed out that the original Italian grid had numbers from 1-10 instead of 1-9, which tragically meant I had to rewrite all 3 puzzles again and change that grid to Zulu instead, apologies for that really long final grid.<br></p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/patterns by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:32:49 GMT -->
+</html>

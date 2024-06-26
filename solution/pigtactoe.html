@@ -1,0 +1,165 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/pigtactoe by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:34:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Pig-Tac-Toe</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <a href="../archive.html">
+                    Archive
+                </a> 
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/pigtactoe.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Pig-Tac-Toe
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">RICE</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Xue Heng
+
+    </h4>
+
+    
+    <p>We first solve the clues, all of which should be easily googlable:<br>
+RAMBO<br>
+MIKEL<br>
+HOARD<br>
+OGRE<br>
+ALEM<br>
+LIPA<br>
+OGLE<br>
+LEMAK<br>
+BOAR<br>
+QIPAO<br></p>
+<p>From the title and flavor text, solvers should be able to deduce that the <a href="https://en.wikipedia.org/wiki/Pigpen_cipher" target="_blank">pigpen cipher</a> is relevant here. When we translate each of the answers to the pigpen cipher, we can make two observations:<br></p>
+<ol>
+<li>All the letters used come from A to R inclusive, and no letter from S to Z is used.<br></li>
+<li>Letters alternate between coming from A to I (in the first pigpen grid without dots in the middle of cells) and from J to R (in the second pigpen grid with dots in the middle of cells)<br></li>
+</ol>
+<p>We can then associate the pigpen ciphers with tic-tac-toe moves, where the undotted cipher letters represent moves by one player and the dotted cipher letters represent moves by the other player. After which, we notice that the player next to move has a winning move.<br></p>
+<p>For example,<br>
+RAMBO corresponds to the following moves:<br>
+1. Dot player playing in the bottom right hand corner. (R)<br>
+2. No-dot player playing in the top left corner. (A)<br>
+3. Dot player playing in the middle cell of the middle row. (M)<br>
+4. No-dot player playing in the middle cell of the top row. (B)<br>
+5. Dot player playing in the rightmost cell of the middle row. (O)<br>
+Now, the winning move for the no-dot player would be the top right corner, corresponding to the letter C, which is what we extract.<br></p>
+<p>Extracting all winning moves in given order of the clues, we get the clue phrase CALL IN RICE, so we submit the answer <b>RICE</b>.<br></p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/pigtactoe by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:34:19 GMT -->
+</html>

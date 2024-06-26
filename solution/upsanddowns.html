@@ -1,0 +1,147 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/upsanddowns by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:34:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Ups and Downs</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <a href="../archive.html">
+                    Archive
+                </a> 
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/upsanddowns.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Ups and Downs
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">AHEAD</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Xue Heng
+
+    </h4>
+
+    
+    <p>From the title and flavor text, coupled with certain suspicious looking words like VIPER, COBRA, PYTHON, MAMBA, ANACONDA, LADDER, LIFT, ELEVATOR and STAIRCASE which can be found in the word search, we can make the intuitive leap that this is a game of snakes and ladders. Also note that snakes only go downwards (3 possible directions) and ladders only go upwards (3 possible directions), following the flavor of the game. The string of numbers at the bottom of the grid denote our die rolls throughout the game. START is found at the bottom left, going from left to right, and END is found on the top left, going from right to left. This hints to us that we need to move our pawn according to the die rolls shown, where the pawn moves from left to right across the bottommost row, goes up one square, then right to left across the second row from the bottom, then up one square, then left to right across the third row from the bottom, etc.</p>
+<p>All that is left to do, according to the flavor text, is to record the letters in each cell we end up in at the end of each die roll. If we end up at the bottom (first letter) of a ladder (LADDER/STAIRCASE/LIFT/ELEVATOR) or on top (first letter) of a snake (ANACONDA/COBRA/PYTHON) we will move our pawn to the cell containing the last letter of the word. Since moving up a ladder or down a snake counts as being in the middle of a turn, we don’t record the first letter, but only the last letter of these words.</p>
+<p>These are the squares we land on in the grid:<br><img style="height: 450px;" src="../static/puzzle_resources/ups/sol211423.png" alt="ups image 1"><br>
+Reading off the letters we land on in chronological order of the die rolls, we get RIGHTWARD OF SNAKE’S HEAD, which clues us to look at the letter to the right of each snake’s head. These are the locations of the snakes (green), ladders (yellow) and letters to the right of each snake’s head (red):<br><img style="height: 450px;" src="../static/puzzle_resources/ups/sol4512031.png" alt="ups image 2"><br>
+Reading the red cells in row-major order, we get the answer <b>AHEAD</b>.<br></p>
+
+<h2>Author's Notes</h2>
+<p>There’s an adder in ladder!</p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/upsanddowns by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:34:14 GMT -->
+</html>

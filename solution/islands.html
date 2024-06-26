@@ -1,0 +1,247 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/islands by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:32:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Islands</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <a href="../archive.html">
+                    Archive
+                </a> 
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/islands.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Islands
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">EVIDENCE BASED</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Jonathan
+
+    </h4>
+
+    
+    <p>The puzzle title, the words in Malay on the islands, as well as the flavortext all guide towards the fact that these are islands of Singapore (whose national language is Malay). We can then index into the island names to get the cluephrase WHATTHREEWORDS. This is a reference to what3words.com. We can then find these islands on what3words, and we find that their representations are all literal translations of the Malay words represented on the 3 islands. The 3 islands differ only in the number of trees, 0, 1 or 2, and we can read them off in ternary to get the final answer, EVIDENCE BASED.<br></p>
+<table>
+<thead>
+<tr>
+<th>Island Name</th>
+<th>Index</th>
+<th>What3words</th>
+<th>Ternary</th>
+<th>Letter extracted</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pulau Pawai</td>
+<td>W</td>
+<td>TILT.POCKET.GREW</td>
+<td>012</td>
+<td>E</td>
+</tr>
+<tr>
+<td>Pulau Hantu</td>
+<td>H</td>
+<td>MOLE.SHAVE.BOUGHT</td>
+<td>211</td>
+<td>V</td>
+</tr>
+<tr>
+<td>Pulau Ubin</td>
+<td>A</td>
+<td>FAILS.INVENT.REJECT</td>
+<td>100</td>
+<td>I</td>
+</tr>
+<tr>
+<td>Pulau Blakang Mati (Sentosa)</td>
+<td>T</td>
+<td>DUCK.PERKY.DONOR</td>
+<td>011</td>
+<td>D</td>
+</tr>
+<tr>
+<td>Pulau Satumu</td>
+<td>T</td>
+<td>LIED.DOLL.FARMS</td>
+<td>012</td>
+<td>E</td>
+</tr>
+<tr>
+<td>Pulau Sakijang Pelepah (Lazarus)</td>
+<td>H</td>
+<td>MUSIC.TRIM.DARKER</td>
+<td>112</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Pulau Brani</td>
+<td>R</td>
+<td>MODEST.HOPES.POINTS</td>
+<td>010</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Pulau Sakijang Bendera (St. John)</td>
+<td>E</td>
+<td>EXPERT.NAIL.RIDER</td>
+<td>012</td>
+<td>E</td>
+</tr>
+<tr>
+<td>Pulau Tekong</td>
+<td>E</td>
+<td>WARNS.BEANS.HILLS</td>
+<td>002</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Pulau Palawan</td>
+<td>W</td>
+<td>ADMITS.TRAIN.MOTEL</td>
+<td>001</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Pulau Biola</td>
+<td>O</td>
+<td>UNWANTED.RATES.RACING</td>
+<td>201</td>
+<td>S</td>
+</tr>
+<tr>
+<td>Pulau Subar Darat</td>
+<td>R</td>
+<td>MILES.SALADS.TWIST</td>
+<td>012</td>
+<td>E</td>
+</tr>
+<tr>
+<td>Pulau Sudong</td>
+<td>DS</td>
+<td>SETTLE.METRO.FISHERY</td>
+<td>011</td>
+<td>D</td>
+</tr>
+</tbody>
+</table>
+<h2>Author's Notes</h2>
+<p>This puzzle was the last to be written for this hunt, even though it was sitting in my ideas bank for a while. The puzzle was supposed to have a first step more towards landmarks in various countries, a second step to do with what3words, and a third step to go to intel.ingress.com (which being in the form of 3 words as well was just too good to pass up), with a final extraction to do with ternary, but I couldn't make it work because you needed an account to use the map. This islands puzzle was supposed to just be about the etymology of the islands of Singapore, but it wasn't meaty enough nor interesting enough in testsolving. While the formatting of the original puzzle was nice, (an example clue would have been something like "Start in the state of _ <em> _ </em> _ <em> _ </em> _ _, United States, at the location with a 605-ft-tall spire built for a World's Fair, where the bells rung are not &lowbar;&lowbar; but recorded. Head 13 blocks north and 2 blocks west of this observation tower (5 6), where you may feel like you are stepping back through through the edge of a round dimensional &lowbar;&lowbar; in time. This marvel simply defies &lowbar;&lowbar;!") the more interesting part to me was having the number of times they appeared interpreted as ternary, so that was the part that was kept.<br></p>
+<p>There were some spelling discrepancies for Pulau S(a/e)kijang B(a/e)ndera. We unfortunately really needed it for the wetlands for Connect the Dots, but it was a potential issue for searching what3words, and so we needed to make the ambiguity clear.</p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/islands by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:32:26 GMT -->
+</html>

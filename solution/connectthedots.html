@@ -1,0 +1,265 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/connectthedots by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:32:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Connect the Dots</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                <a href="../story.html">
+                    Story
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <a href="../archive.html">
+                    Archive
+                </a> 
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/connectthedots.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Connect the Dots
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">ROMEO</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Jonathan
+
+    </h4>
+
+    
+    <p>The first step is to recognize the fact that some of the islands in Islands have landmarks explored in Pulau Ujong as well. Look for the geographic features/buildings on the 13 islands from "Islands" and add them as colored points to the map from Pulau Ujong; there will be 7 new points.<br></p>
+<p>As given by the list of numbers, we can find that:<br>
+Pulau Ubin has a wetlands.<br>
+Pulau Blakang Mati (Sentosa) has 2 golf courses.<br>
+Pulau Satumu has a lighthouse.<br>
+Pulau Sakijang Bendera (St. John) has a wetlands.<br>
+Pulau Tekong has a reservoir.<br>
+Pulau Sudong has a airbase.<br></p>
+<p>We can now add these 7 points to the map, assign each point their corresponding letters and numbers.<br>
+Pulau Ubin has Chek Jawa Wetlands, which would be BB1.<br>
+Pulau Blakang Mati has 2 golf clubs/courses, which would be DD10 and DD11.<br> 
+Pulau Satumu has Raffles Lighthouse, which would be CC5.<br>
+Pulau Sakijang Bendera has St. John's Wetlands, which is BB8.<br>
+Pulau Tekong has Tekong Reservoir, which is AA1.<br>
+And Pulau Sudong has Sudong Military Airport, which is a little tricky to mark, but should be EE7 (if you marked it as EE8 that's fine too, we do not use either point in this puzzle).<br></p>
+<p>Putting it all together, we should get something like the following table:<br><img style="height: 500px;" src="../static/puzzle_resources/connect-the-dots/sol1.png" alt="connect-the-dots1"><br></p>
+<p>We can now follow the instructions to connect the dots. Using the connect the dots instructions, we can draw 6 continuous lines between many colored points (though lines won't always connect points of the same color).<br><img style="height: 500px;" src="../static/puzzle_resources/connect-the-dots/sol243847285.png" alt="connect-the-dots"><br></p>
+<p>When completed correctly, teams should get this map (colors not included). We now have 6 lines drawn on a map of Singapore. These 6 lines roughly follow the path of the 6 MRT lines in Singapore, which is further confirmed by each point being described in the form (alphabet)(alphabet)(number), just like MRT stations in Singapore.<br></p>
+<p>Following the instruction to count the number of stations in each line, we can count the number of points on the map used to represent the MRT on our map. (e.g., the Downtown line is represented using 9 points) Use this number to identify that stop on its respective MRT, given the canonical numbering of the actual MRT line in Singapore (e.g., the 9th stop on the Downtown line is Botanic Gardens).<br></p>
+<table>
+<thead>
+<tr>
+<th>Number of points</th>
+<th>MRT line</th>
+<th>Station Code</th>
+<th>Station name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>NE line</td>
+<td>NE4</td>
+<td>Chinatown</td>
+</tr>
+<tr>
+<td>5</td>
+<td>TE line</td>
+<td>TE5</td>
+<td>Lentor</td>
+</tr>
+<tr>
+<td>8</td>
+<td>EW line</td>
+<td>EW8</td>
+<td>Paya Lebar</td>
+</tr>
+<tr>
+<td>9</td>
+<td>DT line</td>
+<td>DT9</td>
+<td>Botanic Gardens</td>
+</tr>
+<tr>
+<td>10</td>
+<td>CC line</td>
+<td>CC10</td>
+<td>MacPherson</td>
+</tr>
+<tr>
+<td>11</td>
+<td>NS line</td>
+<td>NS11</td>
+<td>Sembawang</td>
+</tr>
+</tbody>
+</table>
+<p>Using the given indices, we can index into the stop's name. We can then reorder the MRT lines by the lines’ respectively openings, to get:<br></p>
+<table>
+<thead>
+<tr>
+<th>Line opening</th>
+<th>Station Code</th>
+<th>Station Name</th>
+<th>Index</th>
+<th>Letter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1987</td>
+<td>NS11</td>
+<td>Sembawang</td>
+<td>8</td>
+<td>N</td>
+</tr>
+<tr>
+<td>1989</td>
+<td>EW8</td>
+<td>Paya Lebar</td>
+<td>2</td>
+<td>A</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>NE4</td>
+<td>Chinatown</td>
+<td>6</td>
+<td>T</td>
+</tr>
+<tr>
+<td>2009</td>
+<td>CC10</td>
+<td>MacPherson</td>
+<td>9</td>
+<td>O</td>
+</tr>
+<tr>
+<td>2013</td>
+<td>DT9</td>
+<td>Botanic Gardens</td>
+<td>14</td>
+<td>S</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>TE5</td>
+<td>Lentor</td>
+<td>6</td>
+<td>R</td>
+</tr>
+</tbody>
+</table>
+<p>NATO’S R refers to the R in the NATO phonetic alphabet, which is ROMEO.<br></p>
+<h2>Author's Notes</h2>
+<p>MRT lines wise, there’s a bit of a mess in the center still, but overall the shapes and positions are decent. A part of me wanted a triplet of Singapore to not involve train lines, but having a map with points was just so nice. I would have liked the lines to use more of the points on the islands, but they skewed the map too far, and it looked better this way. I learnt a lot about Singapore when researching for this triplet (I did not know there was a reservoir on Pulau Tekong, for instance), and I hope everyone did too.<br><h2>Appendix</h2><a href="https://www.google.com/maps/d/u/0/edit?mid=1Lm9wBkyYl6i15s6HR7T8UgiCrIWLZLM&amp;ll=1.3458380080475014%2C103.79006279093286&amp;z=12" target="_blank">Map for reference</a></p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+
+<!-- Mirrored from www.puzzlerojak.xyz/solution/connectthedots by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 05:33:02 GMT -->
+</html>
