@@ -288,20 +288,8 @@
 <p><center>
 <div><a href="https://docs.google.com/spreadsheets/d/1PnvZH3W-GM8kq0bsikzTyJPug26colCQyHRX42Jcrso/edit?usp=sharing" class="btn" target="_blank">View copyable version</a></div></p>
 <p></center></p>
-<p id="demo" class="hints" onclick="myFunction()">Click to show hints.</p>
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = <details><summary>We have solved most of the clues, but we are having trouble filling in the crossword.</summary>
-                                                In variety crosswords, words often go through one of various transformations before being entered into the grid. In this case, each color corresponds to 1 of 5 unique transformations. Each answer must be transformed in one of these 5 ways before entered into the grid.<br>
-                                                For example, if some answers are too long, a possible transformation involves removing certain letters before entering it into the grid, and vice versa. Transformations will usually give English words, so you will be able to correct your errors from there.<br>
-                                                Every cell in the grid will have exactly 1 letter in it.</details>
-                                                <details><summary>I found the ?? words, but I am not sure how to use them?</summary>
-                                                How did you figure out which color mapped to which transformation? Can you think of a way to pair the rules to the colors using the only information provided in the puzzle (not the frequencies, since they're not unique)? Once you figure that out, you should be able to figure out what MISSING TRANSFORM means.
-</details>;
-}
-</script>
     
-<p class="hints"><onClick='document.getElementById("text").style.display="initial"; class="ticket-button">Click to show hints</a></p>
+<p class="hints"><button onClick='document.getElementById("text").style.display="initial";>Click to show hints</a></p>
 <span style="display:none;" id="text"><details><summary>We have solved most of the clues, but we are having trouble filling in the crossword.</summary>
 In variety crosswords, words often go through one of various transformations before being entered into the grid. In this case, each color corresponds to 1 of 5 unique transformations. Each answer must be transformed in one of these 5 ways before entered into the grid.<br>
 For example, if some answers are too long, a possible transformation involves removing certain letters before entering it into the grid, and vice versa. Transformations will usually give English words, so you will be able to correct your errors from there.<br>
